@@ -14,4 +14,8 @@ function showSection(id){
     document.getElementById(id).classList.remove('hidden')   
 }
 
-
+function changeColour(id){
+    document.getElementById('donation').classList.remove('bg-primary')
+    document.getElementById('history').classList.remove('bg-primary')
+    document.getElementById(id).classList.add('bg-primary')
+}
