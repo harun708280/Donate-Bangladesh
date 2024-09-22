@@ -13,3 +13,5 @@ function showSection(id){
     document.getElementById('history-from').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden')   
 }
+
+

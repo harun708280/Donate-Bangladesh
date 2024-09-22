@@ -52,5 +52,22 @@ document.getElementById('btn-feni-donate').addEventListener('click',function(){
 })
 
 
-
+document.getElementById('btn-quta-donate').addEventListener('click',function(){
+   const mainBalance=Number(getTextValue('main-blance'));
+   const inputQutaDonate=Number(getInputValue('input-quta-donate'))
+   const qutaDonate=Number(getTextValue('quta-donate'));
+   const inputDonate= document.getElementById('input-quta-donate').value.trim()
+    
+   if (inputDonate==='' || isNaN(inputQutaDonate)|| inputQutaDonate>mainBalance) {
+        onclick=my_modal_1.showModal()
+        document.getElementById('input-quta-donate').value=''
+   }else{
+     document.getElementById('main-blance').innerText=mainBalance-inputQutaDonate;
+     document.getElementById('quta-donate').innerText=qutaDonate+inputQutaDonate;
+     document.getElementById('input-quta-donate').value=''
+     onclick=my_modal_4.showModal()
+   }
+   
+   
+})
 
