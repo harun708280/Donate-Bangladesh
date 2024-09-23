@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                grayBg:'#F9F7F3',
+                text1:'#111111',
+                text2:'#111111B3',
+                primary:'#B4F461'
+
+              },
+              fontFamily: {
+                font: 'Lexend',
+              },
+            },
+          },
+        };
+      </script>
+      
+</head>
+<body class="font">
+    <section class=" fixed top-0 left-0 w-full z-50">
+        <div class="bg-grayBg">
+            <div class="navbar w-10/12 mx-auto pt-4 pb-12 flex justify-between items-center">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl bg-primary">Home</a>
+                </div>
+                <div class="navbar-center hidden space-x-3 lg:flex">
+                    <img src="./assets/logo.png" alt="" srcset="">
+                    <p class="font-bold text-text1">Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end space-x-3 flex items-center">
+                    <img src="./assets/coin.png" alt="" srcset="">
+                    <p class="text-xl font-bold text-text2"><span id="main-blance">5500</span> BDT</p>
+                </div>
+            </div>
+           
+            
+        </div>
+        
+        
+    </section>
+
+    <section class="mt-56">
+        <div class="w-10/12 mx-auto">
+            <h1 class="text-5xl font-bold mb-9">Important FAQ <span><i class="fa-regular fa-comment-dots"></i></span></h1>
+            <div class="border-2 rounded-xl shadow-2xl py-7 px-3 ">
+            <div class="my-7">
+                <div tabindex="0" class="collapse border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-bold text-text1">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                    <p class="text-base font-bold text-text2">Answer: The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-7">
+                <div tabindex="0" class="collapse border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-bold text-text1">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                    <p class="text-base font-bold text-text2">1
+                        Using getElementById: The getElementById </p>
+                    <p class="text-base font-bold text-text2">2
+                        Using getElementsByClassName:</p>
+                    <p class="text-base font-bold text-text2">3
+                        Using getElementsByTagName:</p>
+                    <p class="text-base font-bold text-text2">4
+                        Using querySelector:</p>
+                    <p class="text-base font-bold text-text2">5
+                        Using querySelectorAll:</p>
+                    <p class="text-base font-bold text-text2">6
+                        Changing the HTML Content: (etc)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-7">
+                <div tabindex="0" class="collapse border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-bold text-text1">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                    <p class="text-base font-bold text-text2">Answer: Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-7">
+                <div tabindex="0" class="collapse border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-bold text-text1">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                    <p class="text-base font-bold text-text2">Answer: Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the input element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+       </div>
+    </section>
+    
+    
+
+    
+    
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/donate.js"></script>
+    <script src="./js/feature.js"></script>
+</body>
+</html>
