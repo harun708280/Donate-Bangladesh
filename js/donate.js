@@ -1,6 +1,4 @@
-
-
-
+// Noakhali Donate
 document.getElementById('btn-noakhali-donate').addEventListener('click',function(){
    const mainBalance=Number(getTextValue('main-blance'));
    const noakhaliDonate=Number(getTextValue('noakhali-donate'))  
@@ -36,7 +34,7 @@ document.getElementById('btn-noakhali-donate').addEventListener('click',function
     
 })
 
-
+// Feni Donate
 
 document.getElementById('btn-feni-donate').addEventListener('click',function(){
     const mainBalance = Number(getTextValue('main-blance'));
@@ -71,6 +69,7 @@ document.getElementById('btn-feni-donate').addEventListener('click',function(){
     
 })
 
+// Qota Donate
 
 document.getElementById('btn-quta-donate').addEventListener('click',function(){
    const mainBalance=Number(getTextValue('main-blance'));
