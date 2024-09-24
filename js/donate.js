@@ -5,7 +5,7 @@ document.getElementById('btn-noakhali-donate').addEventListener('click',function
    const InputNoakhaliDonate= Number(getInputValue('input-noakhali-donate'))
    const inputDonate = document.getElementById('input-noakhali-donate').value.trim()
    
-   if ( inputDonate === '' || isNaN(InputNoakhaliDonate) || InputNoakhaliDonate > mainBalance ) {
+   if ( inputDonate === '' || isNaN(InputNoakhaliDonate) || InputNoakhaliDonate > mainBalance || InputNoakhaliDonate<0) {
     onclick=my_modal_1.showModal()
     document.getElementById('input-noakhali-donate').value = '';
 
@@ -42,7 +42,7 @@ document.getElementById('btn-feni-donate').addEventListener('click',function(){
     const inputDonateFeni=Number(getInputValue('input-feni-donate'))
     const inputDonate = document.getElementById('input-feni-donate').value.trim()
 
-    if (inputDonate === '' || isNaN(inputDonateFeni) || inputDonateFeni>mainBalance) {
+    if (inputDonate === '' || isNaN(inputDonateFeni) || inputDonateFeni>mainBalance || inputDonateFeni<0) {
         onclick=my_modal_1.showModal()
         document.getElementById('input-feni-donate').value=''
     }else{
@@ -77,7 +77,7 @@ document.getElementById('btn-quta-donate').addEventListener('click',function(){
    const qutaDonate=Number(getTextValue('quta-donate'));
    const inputDonate= document.getElementById('input-quta-donate').value.trim()
     
-   if (inputDonate==='' || isNaN(inputQutaDonate)|| inputQutaDonate>mainBalance) {
+   if (inputDonate==='' || isNaN(inputQutaDonate)|| inputQutaDonate>mainBalance || inputQutaDonate<0) {
         onclick=my_modal_1.showModal()
         document.getElementById('input-quta-donate').value=''
    }else{
